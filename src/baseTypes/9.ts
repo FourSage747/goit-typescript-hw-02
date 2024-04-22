@@ -2,7 +2,11 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 
-const page1 = {
+type Object = {
+  [key: string]: string | number | string[] | { createAt: Date; updateAt: Date };
+}
+
+const page1: Object = {
   title: 'The awesome page',
   likes: 100,
   accounts: ['Max', 'Anton', 'Nikita'],
@@ -13,7 +17,7 @@ const page1 = {
   }
 }
 
-const page2 = {
+const page2: Object = {
   title: 'Python or Js',
   likes: 5,
   accounts: ['Alex'],
